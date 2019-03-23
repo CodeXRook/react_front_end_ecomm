@@ -19,6 +19,7 @@ export default (props) => {
         <Link className="navbar-brand" to="/">JamPack</Link>
         <ul className="navbar-nav">
         <li className="nav-item">
+        <Link className="nav-link" to="/">Home</Link>
     
         </li>
         </ul>
