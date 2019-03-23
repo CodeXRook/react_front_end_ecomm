@@ -12,11 +12,11 @@ export default class Login extends React.Component {
     }
 
     handleChange = (e) => {
-        this.setState({ [e.target.name]: e.target.value});
+        this.setState ({ [e.target.name]: e.target.value});
     }
 
     handleSubmit = (e) => {
-        e.preventDefualt();
+        e.preventDefault();
 
         const { email, password } = this.state;
         firebase.auth().signInWithEmailAndPassword(email, password)
