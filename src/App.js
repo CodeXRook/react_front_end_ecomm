@@ -42,7 +42,9 @@ class App extends Component {
                         <Switch>
                             <Route path='/' excat component ={ Home } />
                             <Route path='/createprofile' exact component ={ CreateProfile } />
-                            
+                            <Route path='/login' exact component= { Login } />
+                            <Route path ='/logout' exact component={ Logout} />
+                            <Route component={ Error404 } />
                         </Switch>
                     </div>
                 </AuthContext.Provider>
