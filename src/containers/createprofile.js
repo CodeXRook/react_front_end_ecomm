@@ -17,5 +17,8 @@ export default class CreateProfile extends React.Component {
 
         const { email, password } = this.state;
         firebase.auth().createUserWithEmailAndPassword(email, password)
+            .then((response) => {
+                console.log('Returns: ', response);
+            })
     }
 }
