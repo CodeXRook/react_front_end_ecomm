@@ -18,9 +18,19 @@ class App extends Component {
     componentDidMount = () => {
         this.unsubscribe = Firebase.auth().onAuthStateChange(user => {
             if (user) {
-                this.state
+                this.setState({
+                    user,
+                });
+            } else {
+                this.setState({
+                    user: null, 
+                });
             }
-        })
+        });
+    }
+
+    componentWillUnmount = () =>{
+        this.unsubscribe();
     }
 
     render(){
@@ -31,7 +41,8 @@ class App extends Component {
                     <div className='container mt-5'>
                         <Switch>
                             <Route path='/' excat component ={ Home } />
-                            <Route path='/createprofile' exact component { CreateProfile } />
+                            <Route path='/createprofile' exact component ={ CreateProfile } />
+                            
                         </Switch>
                     </div>
                 </AuthContext.Provider>
