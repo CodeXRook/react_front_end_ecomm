@@ -41,6 +41,7 @@ export default class Login extends React.Component {
             <input type="email" className="form-control" aria-describedy="emailHelp" placeholder="Enter email" name="email" value= {email} onChabge={this.handleChange} />
             </div>
             <div className="form-group">
+            <label htmlFor="exampleInputPassword1">Password</label>
         </form>
         </>;
 
