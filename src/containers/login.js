@@ -37,7 +37,24 @@ export default class Login extends React.Component {
         <form>
             <div className="form-group">
             <label htmlFor="exampleInputEmail"> Email </label>
+            <input type="email" className="form-control" aria-describedy="emailHelp" placeholder="Enter email" name="email" value= {email} onChabge={this.handleChange} />
+
             </div>
         </form>
+        </>;
+
+        return(
+            <AuthContext.Consumer>
+                {
+                    (user) => {
+                        if (user) {
+                            return <Redirect to='/' />
+                        } else{
+                            return displayForm;
+                        }
+                    }
+                }
+            </AuthContext.Consumer>
+        )
     }
 }
