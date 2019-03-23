@@ -38,7 +38,12 @@ export default class CreateProfile extends React.Component {
             <label htmlFor="exampleInputEmail">Email</label>
             <input type="password" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange={this.handleChange} />
             </div>
+
+            <div className="form-group">
+            <label htmlFor="exampleInputPassword1">Password</label>
             
+            </div>
+
         </form>
 
         
