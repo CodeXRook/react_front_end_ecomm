@@ -13,4 +13,15 @@ export default (props) => {
     const loggedIn =<> <li className="nav-item">
     <Link className ="nav-link" to="/logout"> Sign Out </Link>
     </li></>
+
+    return(
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link className="navbar-brand" to="/">JamPack</Link>
+        <ul className="navbar-nav">
+        <li className="nav-item">
+    
+        </li>
+        </ul>
+        </nav>
+    )
 }
