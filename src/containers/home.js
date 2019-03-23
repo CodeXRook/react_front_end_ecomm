@@ -6,7 +6,9 @@ export default class Home extends React.Component {
 
     render() {
         return (
-        
+        <AuthContext.Consumer>
+            
+        </AuthContext.Consumer>
         )
     }
 }
