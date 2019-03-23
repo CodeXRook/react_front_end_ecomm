@@ -20,5 +20,14 @@ export default class CreateProfile extends React.Component {
             .then((response) => {
                 console.log('Returns: ', response);
             })
+            .catch(err => {
+                const { message } = err;
+                this.setState({ error: message });
+            })
+    }
+
+    render(){
+
+        
     }
 }
