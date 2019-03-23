@@ -21,15 +21,16 @@ export default class Login extends React.Component {
         const { email, password } = this.state;
         firebase.auth().signInWithEmailAndPassword(email, password)
         .then((reponse) => {
-            console.log('Returns:', response);
+            console.log('Returns: ', response);
         })
         .catch(err => {
             const { message } = err;
             this.setState({ error: message });
         }) 
     }
+
     render() {
-        const { email, password, erro } = this.state;
+        const { email, password, error } = this.state;
         const displayError =error === '' ? '' :<div className="alert alert-danger" role="alert">{error}</div>
         const displayForm =<>
         <h1> Login </h1>
