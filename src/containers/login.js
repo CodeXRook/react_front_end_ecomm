@@ -10,5 +10,11 @@ export default class Login extends React.Component {
         password:'',
         error:''
     }
+
+    handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value});
+    }
     
+    handleSubmit = (e) => {e.preventDefualt();
+    }
 }
