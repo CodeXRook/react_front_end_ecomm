@@ -8,4 +8,7 @@ export default class CreateProfile extends React.Component {
         error:''
     }
 
+    handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value});
+    }
 }
