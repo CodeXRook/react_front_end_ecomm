@@ -39,8 +39,8 @@ export default class Login extends React.Component {
             <div className="form-group">
             <label htmlFor="exampleInputEmail"> Email </label>
             <input type="email" className="form-control" aria-describedy="emailHelp" placeholder="Enter email" name="email" value= {email} onChabge={this.handleChange} />
-
             </div>
+            <div className="form-group">
         </form>
         </>;
 
