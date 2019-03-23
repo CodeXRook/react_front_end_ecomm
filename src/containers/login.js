@@ -14,7 +14,21 @@ export default class Login extends React.Component {
     handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value});
     }
-    
-    handleSubmit = (e) => {e.preventDefualt();
+
+    handleSubmit = (e) => {
+        e.preventDefualt();
+
+        const { email, password } = this.state;
+        firebase.auth().signInWithEmailAndPassword(email, password)
+        .then((repone) => {
+            console.log('Returns:', response);
+        })
+        .catch(err => {
+            const { message } = err;
+            this.setState({ error: message });
+        })
+    }
+    render() {
+        const { email, password}
     }
 }
