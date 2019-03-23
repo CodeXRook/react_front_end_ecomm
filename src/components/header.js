@@ -19,9 +19,16 @@ export default (props) => {
         <Link className="navbar-brand" to="/">JamPack</Link>
         <ul className="navbar-nav">
         <li className="nav-item">
-        <Link className="nav-link" to="/">Home</Link>
-    
+        <Link className="nav-link" to="/"> Home </Link>
         </li>
+        <AuthContext.Consumer>
+            {
+                user =>{
+                    if (user) return loggedIn
+                    else return loggedOut
+                }
+            }
+        </AuthContext.Consumer>
         </ul>
         </nav>
     )
