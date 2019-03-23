@@ -28,6 +28,12 @@ export default class CreateProfile extends React.Component {
 
     render(){
 
+        const {email, pawssword, error } = this.state;
+        const displayeError = error === '' ? '' : <div className="alert alert-danger" roler="alert">{error}</div>
+        const form = <>
+        <h1> Sign Up </h1>
+        {displayError}
+
         
     }
 }
