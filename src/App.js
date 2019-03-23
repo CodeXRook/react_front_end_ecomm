@@ -3,9 +3,13 @@ import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 
+
 //-----PAGES
 import Home from './components/home';
 import CreateProfile from './containers/createprofile';
+import Login from './containers/login';
+import Logout from './containers/logout';
+import Error404 from './components/error404';
 
 
 
