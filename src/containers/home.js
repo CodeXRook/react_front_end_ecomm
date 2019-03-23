@@ -13,7 +13,11 @@ export default class Home extends React.Component {
                         return (
                             <>
                             <h2> Welcome back, {user.email} Let's shop </h2>
+                            <h4> Your Shoping tag is: {user.uid}</h4>
+                            </>
                         )
+                    } else {
+                        return <h2> You are not logged in </h2>
                     }
                 }
             }
