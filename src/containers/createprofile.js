@@ -33,6 +33,12 @@ export default class CreateProfile extends React.Component {
         const form = <>
         <h1> Sign Up </h1>
         {displayError}
+        <form>
+            <div className="form-group">
+            <label htmlFor="exampleInputEmail">Email</label>
+            
+            </div>
+        </form>
 
         
     }
