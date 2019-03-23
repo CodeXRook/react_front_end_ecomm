@@ -3,9 +3,25 @@ import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 
+//-----PAGES
+import Home from './components/home';
+import CreateProfile from './containers/createprofile';
+
+
+
 class App extends Component {
 
+    state ={
+        user:null,
+    }
 
+    componentDidMount = () => {
+        this.unsubscribe = Firebase.auth().onAuthStateChange(user => {
+            if (user) {
+                this.state
+            }
+        })
+    }
 
     render(){
         return(

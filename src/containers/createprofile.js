@@ -3,13 +3,13 @@ import React from 'react';
 export default class CreateProfile extends React.Component {
 
     state = {
-        email:'',
-        password:'',
-        error:''
+        email: '',
+        password: '',
+        error: ''
     }
 
     handleChange = (e) => {
-        this.setState({ [e.target.name]: e.target.value});
+        this.setState({ [e.target.name]: e.target.value });
     }
 
     handleSubmit = (e) => {
@@ -26,26 +26,40 @@ export default class CreateProfile extends React.Component {
             })
     }
 
-    render(){
+    render() {
 
-        const {email, pawssword, error } = this.state;
+        const { email, pawssword, error } = this.state;
         const displayeError = error === '' ? '' : <div className="alert alert-danger" roler="alert">{error}</div>
         const form = <>
-        <h1> Sign Up </h1>
-        {displayError}
-        <form>
-            <div className="form-group">
-            <label htmlFor="exampleInputEmail">Email</label>
-            <input type="password" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange={this.handleChange} />
-            </div>
+            <h1> Sign Up </h1>
+            {displayError}
+            <form>
+                <div className="form-group">
+                    <label htmlFor="exampleInputEmail">Email</label>
+                    <input type="password" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange={this.handleChange} />
+                </div>
 
-            <div className="form-group">
-            <label htmlFor="exampleInputPassword1">Password</label>
-            <input type="pasword" className="form-control" placeholder="Password" value={password} name="password" onChange={this.hanleChange} />
-            </div>
-        <button type="password" className="btn btn-primary" onClick={this.handleSubmit}>Sign Up</button>
-        </form>
+                <div className="form-group">
+                    <label htmlFor="exampleInputPassword1">Password</label>
+                    <input type="pasword" className="form-control" placeholder="Password" value={password} name="password" onChange={this.hanleChange} />
+                </div>
+                <button type="password" className="btn btn-primary" onClick={this.handleSubmit}>Sign Up</button>
+            </form>
         </>;
-        
+
+        return (
+            <AuthContext.Consumer>
+                {
+                    user => {
+                        if (user) {
+                            return <Redirect to='/'></Redirect>
+                        } else {
+                            return form;
+                        }
+                    }
+                }
+            </AuthContext.Consumer>
+        );
+
     }
 }
