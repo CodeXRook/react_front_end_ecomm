@@ -4,6 +4,7 @@ import AuthContext from '../contexts/auth';
 
 export default (props) => {
     const loggedOut = <> <li className="nav-item">
-    
+        <Link className="nav-link" to="/createprofile">Sign Up Now </Link>
     </li>
+    
 }
