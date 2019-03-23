@@ -29,6 +29,15 @@ export default class Login extends React.Component {
         })
     }
     render() {
-        const { email, password}
+        const { email, password, erro } = this.state;
+        const displayError =error === '' ? '' :<div className="alert alert-danger" role="alert">{error}</div>
+        const displayForm =<>
+        <h1> Login </h1>
+        {displayError}
+        <form>
+            <div className="form-group">
+            <label htmlFor="exampleInputEmail"> Email </label>
+            </div>
+        </form>
     }
 }
