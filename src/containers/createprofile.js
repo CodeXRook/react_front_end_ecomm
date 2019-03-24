@@ -31,7 +31,7 @@ export default class CreateProfile extends React.Component {
 
     render() {
 
-        const { email, pawssword, error } = this.state;
+        const { email, password, error } = this.state;
         const displayError = error === '' ? '' : <div className="alert alert-danger" roler="alert">{error}</div>
         const displayForm = <>
             <h1> Sign Up </h1>
