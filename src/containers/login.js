@@ -40,16 +40,18 @@ export default class Login extends React.Component {
             <label htmlFor="exampleInputEmail"> Email </label>
             <input type="email" className="form-control" aria-describedy="emailHelp" placeholder="Enter email" name="email" value= {email} onChabge={this.handleChange} />
             </div>
+
             <div className="form-group">
             <label htmlFor="exampleInputPassword1">Password</label>
             <input type="password" className="form-control" placeholder="Password" value={password} name="password" onChange={this.handleChange} />
             </div>
+
             <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Login</button>
         </form>
         </>;
 
         return(
-            <AuthContext.Consumer>
+              <AuthContext.Consumer>
                 {
                     (user) => {
                         if (user) {
@@ -59,7 +61,8 @@ export default class Login extends React.Component {
                         }
                     }
                 }
-            </AuthContext.Consumer>
+             </AuthContext.Consumer>
         )
     }
 }
+

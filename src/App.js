@@ -7,7 +7,7 @@ import firebase from './firebase';
 //-----PAGES
 import Header from './components/header';
 import Home from './containers/home';
-import CreateProfile from './containers/createprofile';
+import Signup from './containers/signup';
 import Login from './containers/login';
 import Logout from './containers/logout';
 import Error404 from './components/error404';
@@ -46,7 +46,7 @@ class App extends Component {
                     <div className='container mt-5'>
                         <Switch>
                             <Route path='/' excat component ={ Home } />
-                            <Route path='/createprofile' exact component ={ CreateProfile } />
+                            <Route path='/signup' exact component ={ Signup } />
                             <Route path='/login' exact component= { Login } />
                             <Route path ='/logout' exact component={ Logout} />
                             <Route component={ Error404 } />
