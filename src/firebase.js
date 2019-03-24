@@ -1,7 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/auth';
 
-var config = {
+const config = {
     apiKey: "AIzaSyDXrCSXEkrCBQM8Boxyye3ndeDVHcVIgBc",
     authDomain: "jampack-fron-end.firebaseapp.com",
     databaseURL: "https://jampack-fron-end.firebaseio.com",
