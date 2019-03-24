@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Firebase from './firebase';
+import firebase from './firebase';
 
 
 
@@ -13,7 +13,7 @@ import Logout from './containers/logout';
 import Error404 from './components/error404';
 
 // ---- CONTEXTS
-import AuthContext from './contexts.auth';
+import AuthContext from './contexts/auth';
 
 class App extends Component {
 
