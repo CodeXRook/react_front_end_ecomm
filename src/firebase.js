@@ -1,5 +1,6 @@
 import app from 'firebase/app';
 import 'firebase/auth';
+//FIREBASE SHOULD BE A ROOT ON THE SAME LINE AS INDEX.JS
 
 const config = {
     apiKey: "AIzaSyDXrCSXEkrCBQM8Boxyye3ndeDVHcVIgBc",
