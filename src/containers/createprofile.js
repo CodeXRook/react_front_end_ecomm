@@ -44,9 +44,9 @@ export default class CreateProfile extends React.Component {
 
                 <div className="form-group">
                     <label htmlFor="exampleInputPassword1">Password</label>
-                    <input type="password" className="form-control" placeholder="Password" value={password} name="password" onChange={this.hanleChange} />
+                    <input type= "password" className="form-control" placeholder="Password" value={password} name="password" onChange={this.hanleChange} />
                 </div>
-                <button type="password" className="btn btn-primary" onClick={this.handleSubmit}>Sign Up</button>
+                <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Sign Up</button>
             </form>
         </>;
 
