@@ -5,6 +5,7 @@ import Firebase from './firebase';
 
 
 //-----PAGES
+import Header from './components/header';
 import Home from './components/home';
 import CreateProfile from './containers/createprofile';
 import Login from './containers/login';
