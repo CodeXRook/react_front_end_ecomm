@@ -22,9 +22,9 @@ class App extends Component {
     }
 
     componentDidMount() {
-        this.unsubscribe = firebase.auth().onAuthStateChange((user => {
+        this.unsubscribe = firebase.auth().onAuthStateChanged((user) => {
             if (user) {
-                this.setState({ user});
+                this.setState({ user });
             }
              else {
                 this.setState({ user: null })
@@ -32,12 +32,12 @@ class App extends Component {
         })
     }
 
-    componentWillUnmount (){
-        this.unsubscribe();
+    componentWillUnmount () { 
+        this.unsubscribe()
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <HashRouter>
                 <AuthContext.Provider value ={this.state.user}>
                     <Route path='/' component={ Header }/>
