@@ -7,7 +7,7 @@ const config = {
     authDomain: "jampack-fron-end.firebaseapp.com",
     databaseURL: "https://jampack-fron-end.firebaseio.com",
     projectId: "jampack-fron-end",
-    storageBucket: "",
+    storageBucket: "jampack-fron-end.appspot.com",
     messagingSenderId: "760212620139"
   };
 
