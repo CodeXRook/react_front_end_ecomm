@@ -21,7 +21,7 @@ class App extends Component {
         user:null,
     }
 
-    componentDidMount = () => {
+    componentDidMount () {
         this.unsubscribe = firebase.auth().onAuthStateChange(user => {
             if (user) {
                 this.setState({
