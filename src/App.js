@@ -17,25 +17,22 @@ import AuthContext from './contexts/auth';
 
 class App extends Component {
 
-    state ={
-        user:null,
+    state = {
+        user: null
     }
 
-    componentDidMount () {
-        this.unsubscribe = firebase.auth().onAuthStateChange(user => {
+    componentDidMount() {
+        this.unsubscribe = firebase.auth().onAuthStateChange((user => {
             if (user) {
-                this.setState({
-                    user,
-                });
-            } else {
-                this.setState({
-                    user: null, 
-                });
+                this.setState({ user});
             }
-        });
+             else {
+                this.setState({ user: null })
+            }
+        })
     }
 
-    componentWillUnmount = () =>{
+    componentWillUnmount (){
         this.unsubscribe();
     }
 
