@@ -53,7 +53,7 @@ export default class CreateProfile extends React.Component {
         return (
             <AuthContext.Consumer>
                 {
-                    user => {
+                    (user) => {
                         if (user) {
                             return <Redirect to='/'></Redirect>
                         } else {

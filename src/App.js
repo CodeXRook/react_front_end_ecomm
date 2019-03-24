@@ -21,6 +21,7 @@ class App extends Component {
         user: null
     }
 
+    
     componentDidMount() {
         this.unsubscribe = firebase.auth().onAuthStateChanged((user) => {
             if (user) {
@@ -31,6 +32,7 @@ class App extends Component {
             }
         })
     }
+
 
     componentWillUnmount () { 
         this.unsubscribe()
