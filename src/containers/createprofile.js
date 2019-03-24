@@ -57,7 +57,7 @@ export default class CreateProfile extends React.Component {
                         if (user) {
                             return <Redirect to='/'></Redirect>
                         } else {
-                            return form;
+                            return displayForm;
                         }
                     }
                 }
