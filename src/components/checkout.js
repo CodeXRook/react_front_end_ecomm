@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export default (props) => {
-    return(
-    <h1>yo son</h1>
-    )
+class Checkout extends Component {
+
+     
+    
 }
+    export default Checkout;
