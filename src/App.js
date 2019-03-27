@@ -12,6 +12,7 @@ import Login from './containers/login';
 import Logout from './containers/logout';
 import Error404 from './components/error404';
 import Cart from '/.components/cart';
+import shopprofile from './components/Shopprofile';
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';
