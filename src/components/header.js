@@ -23,7 +23,7 @@ export default (props) => {
       JamPack
  </button>
  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
+    <a class="cart" href='./components/cart'>Explore marketplace</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
   </div>

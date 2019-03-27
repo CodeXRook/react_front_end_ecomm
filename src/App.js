@@ -5,18 +5,18 @@ import firebase from './firebase';
 
 
 //-----PAGES
-import Header from '/.components/header';
-import Home from '/.containers/home';
+import Header from './components/header';
+import Home from './containers/home';
 import Signup from './containers/signup';
 import Login from './containers/login';
 import Logout from './containers/logout';
 import Error404 from './components/error404';
-import Cart from '/.components/cart';
-import Shopprofile from '/.components/shopprofile';
-import Listorders from '/.components/listorders';
-import Checkout from '/.components/checkout';
-import Viewproduct from '/.components/viewproduct';
-import  Createproduct from '/.components/createproduct';
+import Cart from './components/cart';
+import Shopprofile from './components/shopprofile';
+import Listorders from './components/listorders';
+import Checkout from './components/checkout';
+import Viewproduct from './components/viewproduct';
+import  Createproduct from './components/createproduct';
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';
