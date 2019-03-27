@@ -14,6 +14,7 @@ import Error404 from './components/error404';
 import Cart from '/.components/cart';
 import Shopprofile from '/.components/shopprofile';
 import Listorders from '/.components/listorders';
+import Checkout from '/.components/checkout';
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';
