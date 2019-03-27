@@ -60,7 +60,7 @@ class App extends Component {
                             <Route path='/cart' exact component={ Cart } />
                             <Route path='/checkout' exact component={ Checkout } />
                             <Route path='/createproduct' exact component={  Createproduct } />
-                            <Route pathh='/Listorders' exact component ={ Listorders } />
+                            <Route pathh='/listorders' exact component ={ Listorders } />
                             <Route component={ Error404 } />
                         </Switch>
                     </div>

@@ -9,8 +9,12 @@ export default class Home extends React.Component {
 
         
         return (
+
+
+            
         <AuthContext.Consumer>
             {
+
                 (user) => {
                     if (user) {
                         return (
@@ -27,6 +31,8 @@ export default class Home extends React.Component {
                             </>
                         )
                     }
+                    
+
                 }
             }
         </AuthContext.Consumer>

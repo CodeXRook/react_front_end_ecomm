@@ -24,8 +24,8 @@ export default (props) => {
  </button>
  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="cart" href='./components/cart'>Explore marketplace</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#"> Local shops </a>
+    <a class="dropdown-item" href="#">create shop</a>
   </div>
 
        </div>
