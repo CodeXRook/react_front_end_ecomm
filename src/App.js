@@ -48,7 +48,13 @@ class App extends Component {
                             <Route path='/' exact component ={ Home } />
                             <Route path='/signup' exact component ={ Signup } />
                             <Route path='/login' exact component= { Login } />
-                            <Route path ='/logout' exact component={ Logout} />
+                            <Route path ='/logout' exact component={ Logout } />
+                            <Route path='/shopprofile' exact component={ Shopprofile } />
+                            <Route path='/viewproduct' excat component={ Viewproduct } />
+                            <Route path='/cart' exact component={ Cart } />
+                            <Route path='/checkout' exact component={ Checkout } />
+                            <Route path='/createproduct' exact component={  Createproduct } />
+                            <Route pathh='/Listorders' exact component ={ Listorders } />
                             <Route component={ Error404 } />
                         </Switch>
                     </div>
