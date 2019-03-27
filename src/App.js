@@ -15,6 +15,7 @@ import Cart from '/.components/cart';
 import Shopprofile from '/.components/shopprofile';
 import Listorders from '/.components/listorders';
 import Checkout from '/.components/checkout';
+import Viewproduct from '/.components/viewproduct';
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';
