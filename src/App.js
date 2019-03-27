@@ -11,6 +11,7 @@ import Signup from './containers/signup';
 import Login from './containers/login';
 import Logout from './containers/logout';
 import Error404 from './components/error404';
+import Cart from '/.components/cart';
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';

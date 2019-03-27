@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-
-
-export defualt Cart;
+export default (props) => {
+    return(
+    <h1>yo son</h1>
+    )
+}
