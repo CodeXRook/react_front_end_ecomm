@@ -5,8 +5,8 @@ import firebase from './firebase';
 
 
 //-----PAGES
-import Header from './components/header';
-import Home from './containers/home';
+import Header from '/.components/header';
+import Home from '/.containers/home';
 import Signup from './containers/signup';
 import Login from './containers/login';
 import Logout from './containers/logout';
