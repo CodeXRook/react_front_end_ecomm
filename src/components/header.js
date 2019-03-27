@@ -6,8 +6,9 @@ export default (props) => {
   const loggedOut = <><li className="nav-item">
       <Link className="nav-link" to="/signup">Sign Up</Link>
     </li>
+
     <li className="nav-item">
-      <Link className="nav-link" to="/login">Login</Link>
+      <Link className="nav-link" to="/login">Log In</Link>
     </li></>
 
   const loggedIn = <><li className="nav-item">
