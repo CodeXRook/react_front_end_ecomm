@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-class Checkout extends Component {
+class Checkout extends React.Component {
 
      
     

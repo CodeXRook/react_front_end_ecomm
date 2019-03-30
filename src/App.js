@@ -12,11 +12,11 @@ import Login from './containers/login';
 import Logout from './containers/logout';
 import Error404 from './components/error404';
 import Cart from './components/cart';
-import Shopprofile from './components/shopprofile';
-import Listorders from './components/listorders';
+import ShopProfile from './components/shopprofile';
+import ListOrders from './components/listorders';
 import Checkout from './components/checkout';
-import Viewproduct from './components/viewproduct';
-import  Createproduct from './components/createproduct';
+import ViewProduct from './components/viewproduct';
+import  CreateProduct from './components/createproduct';
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';
@@ -55,12 +55,12 @@ class App extends Component {
                             <Route path='/signup' exact component ={ Signup } />
                             <Route path='/login' exact component= { Login } />
                             <Route path ='/logout' exact component={ Logout } />
-                            <Route path='/shopprofile' exact component={ Shopprofile } />
-                            <Route path='/viewproduct' excat component={ Viewproduct } />
+                            <Route path='/shopprofile' exact component={ ShopProfile } />
+                            <Route path='/viewproduct' excat component={ ViewProduct } />
                             <Route path='/cart' exact component={ Cart } />
                             <Route path='/checkout' exact component={ Checkout } />
-                            <Route path='/createproduct' exact component={  Createproduct } />
-                            <Route pathh='/listorders' exact component ={ Listorders } />
+                            <Route path='/createproduct' exact component={  CreateProduct } />
+                            <Route pathh='/listorders' exact component ={ ListOrders } />
                             <Route component={ Error404 } />
                         </Switch>
                     </div>

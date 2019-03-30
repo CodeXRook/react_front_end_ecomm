@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-export default (props) => {
-    return(
-    <h1>yo son</h1>
-    )
+class ListOrders extends React.Component {
+
+     
+    
 }
+    export default ListOrders;

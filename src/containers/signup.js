@@ -34,16 +34,16 @@ export default class Signup extends React.Component {
         const { email, password, error } = this.state;
         const displayError = error === '' ? '' : <div className="alert alert-danger" roler="alert">{error}</div>
         const displayForm = <>
-            <h1> Sign Up </h1>
+            <h1> Sign up </h1>
             {displayError}
             <form>
                 <div className="form-group">
-                    <label htmlFor="exampleInputEmail">Email</label>
-                    <input type="password" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange={this.handleChange} />
+                    <label htmlFor="exampleInputEmail"> email/username</label>
+                    <input type="password" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange= {this.handleChange} />
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="exampleInputPassword1">Password</label>
+                    <label htmlFor="exampleInputPassword1">Create Password</label>
                     <input type= "password" className="form-control" placeholder="Password" value={password} name="password" onChange={this.hanleChange} />
                 </div>
                 <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Sign Up</button>

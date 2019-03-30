@@ -1,7 +1,11 @@
 import React from 'react';
-import AuthContext from '../contexts/auth';
+
 
 export default class Home extends React.Component {
+
+
+
+
 
 
 
@@ -10,32 +14,77 @@ export default class Home extends React.Component {
         
         return (
 
+ <>  
 
+ 
+ <nav class="flexContainer">
+                <div class="nav-wrapper">
+            <ul id="nav-mobile" class="nav flexContainer flexEnd ">
+           
+                    <li> <a class="wcolor" href='/'> JamPack </a> </li>
+        
+
+       
+                    <li><a class="wcolor" href='/'> Local Shops </a></li>
+              
+
+                <li>
+                    <a class="wcolor" href='/'> MARKET PLACE </a> <input class="input" placeholder="search"/>
+                    </li>
+           
+   
+            </ul>
+           
+        </div>
+
+        </nav>
+    
+
+        <div class="overlay-image"><a href='./assets/tmsq.png'>
+                <div class="normal">
+             </div>
+
+
+                <div class="hover">
+                 <div class="text" class="button pulse"> ENTER MARKET PLACE </div>
+
+                </div>
+               </a>
+            </div>
+
+
+
+
+       
+
+        <div class="col-3 tout">
+            <h3>Create Profile</h3>
+
+
+            <a class="button" href="userprofile.html">SIGN UP NOW</a>
+        </div>
+
+
+        <div class="col-3 tout">
             
-        <AuthContext.Consumer>
-            {
+            <h3>TRENDS</h3>
 
-                (user) => {
-                    if (user) {
-                        return (
-                            <>
-                            <h2> Welcome back, Let's shop , {user.email}</h2>
-                            <h4> Your Shoping tag is: {user.uid}</h4>
-                            </>
-                        )
-                    } else {
-                        return (
-                            <>
-                            <h2> Welcome back, Let's shop </h2>
-                            <h2> You are not logged in </h2>
-                            </>
-                        )
-                    }
-                    
+            <a class="button" href='/'> MarketPlace</a>
+            
+             <a class="button" href="#"> MarketPlace </a> 
 
-                }
-            }
-        </AuthContext.Consumer>
+        </div>
+
+        <div class="col-3 tout">
+            <h3>Find a shop</h3>
+   
+            <a class="button" href='/'>START YOUR SEARCH</a>
+        </div>
+     
+    
+       </>
+
         )
-    }
+    //    
+        }
 }
