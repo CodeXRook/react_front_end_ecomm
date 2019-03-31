@@ -38,7 +38,7 @@ export default class Signup extends React.Component {
             {displayError}
             <form>
                 <div className="form-group">
-                    <label htmlFor="exampleInputEmail"> email/username</label>
+                    <label htmlFor="exampleInputEmail"> email/username </label>
                     <input type="password" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange= {this.handleChange} />
                 </div>
 

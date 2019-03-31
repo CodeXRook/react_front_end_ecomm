@@ -18,17 +18,9 @@ export default (props) => {
   return(
 
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-<div class="dropdown">
-<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      JamPack
- </button>
- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="cart" href='./components/cart'>Explore marketplace</a>
-    <a class="dropdown-item" href="#"> Local shops </a>
-    <a class="dropdown-item" href="#">create shop</a>
-  </div>
+<h1>JamPack</h1>
 
-       </div>
+    
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link className="nav-link" to="/">Home</Link>
