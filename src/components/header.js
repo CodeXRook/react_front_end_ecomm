@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../contexts/auth';
+import './header.css';
 
 export default (props) => {
   const loggedOut = <><li className="nav-item">
@@ -17,13 +18,13 @@ export default (props) => {
 
   return(
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="wholenave">
 <h1>JamPack</h1>
 
     
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link" to="/">Home </Link>
         </li>
         <AuthContext.Consumer>
           {
