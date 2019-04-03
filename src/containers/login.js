@@ -54,9 +54,7 @@ export default class Login extends React.Component {
         {displayError}
         
         <form>
-        
-
-</div>
+    
           <div className="form-group">
             <label htmlFor="exampleInputEmail1">Email</label>
             <input type="email" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange={this.handleChange} />

@@ -10,13 +10,11 @@ export default class Home extends React.Component {
 
         
         return (  
-            <> 
+            <div>
+                
+             <img src={ require('../assets/tmsq.jpg')} className="img-fluid" alt="Responsive image" />
 
-     
-<div className="image"><img src={ require('../assets/tmsq.jpg')} className="img-fluid" alt="Responsive image" />
-
-</div>
-            </>
+             </div>
         )
     }
 }
