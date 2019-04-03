@@ -1,7 +1,6 @@
 import React from 'react';
 import firebase from '../firebase';
-import AuthContext from '../contexts/auth';
-import { Redirect } from 'react-router-dom';
+
 
 export default class Login extends React.Component {
 
@@ -53,11 +52,17 @@ export default class Login extends React.Component {
       <>
         <h1>Login</h1>
         {displayError}
+        
         <form>
+        
+
+</div>
           <div className="form-group">
             <label htmlFor="exampleInputEmail1">Email</label>
             <input type="email" className="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={email} onChange={this.handleChange} />
           </div>
+
+          
           <div className="form-group">
             <label htmlFor="exampleInputPassword1">Password</label>
             <input type="password" className="form-control" placeholder="Password" value={password} name="password" onChange={this.handleChange} />
