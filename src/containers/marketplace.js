@@ -65,15 +65,14 @@ handleCartClick = (e) => {
 <a target="_blank" href="img_mountains.jpg">
   <img src={require('../assets/Ghost.jpeg')} alt="Mountains" width="60" height="40"/>
 </a>
-
 <div class="desc"> GHOST </div>
+</div>
 
 <div class="gallery">
 <a target="_blank" href="img_forest.jpg">
   <img src={ require('../assets/fallOut4.jpeg')} alt="Forest" width="60" height="40"/>
 </a>
 <div class="desc"> State Of Decay </div>
-</div>
 </div>
 
       </>    
