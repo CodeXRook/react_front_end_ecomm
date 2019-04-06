@@ -47,25 +47,25 @@ handleCartClick = (e) => {
 
 </div>
 
-<div class="gallery">
+<div className="gallery">
 <a target="_blank" href="img_forest.jpg">
   <img src={ require('../assets/StateOfDecay.jpeg')} alt="Forest" width="60" height="40"/>
 </a>
-<div class="desc"> State Of Decay </div>
+<div className="desc"> State Of Decay </div>
 </div>
 
-<div class="gallery">
+<div className="gallery">
 <a target="_blank" href="img_lights.jpg">
   <img src={ require('../assets/spiderMan.jpeg')} alt="Northern Lights" width="50" height="40"/>
 </a>
-<div class="desc">Spider Man</div>
+<div className="desc">Spider Man</div>
 </div>
 
 <div class="gallery">
 <a target="_blank" href="img_mountains.jpg">
   <img src={require('../assets/Ghost.jpeg')} alt="Mountains" width="60" height="40"/>
 </a>
-<div class="desc"> GHOST </div>
+<div className="desc"> GHOST </div>
 </div>
 
 <div class="gallery">
