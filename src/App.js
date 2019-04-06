@@ -17,7 +17,7 @@ import ListOrders from './components/listorders';
 import Checkout from './components/checkout';
 import ViewProduct from './components/viewproduct';
 import CreateProduct from './components/createproduct';
-import MarketPlace from './components/marketplace';
+import MarketPlace from './containers/marketplace';
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';

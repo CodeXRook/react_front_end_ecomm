@@ -1,4 +1,5 @@
 import React from 'react';
+import  './marketplace.css';
 
 class MarketPlace extends React.Component{
     constructor(props){
@@ -30,40 +31,49 @@ handleCartClick = (e) => {
     render(){
         return (
 <>
-            <h1> <button id="0" onClick={this.handleCartClick}> Add to Cart </button>
-            Welcome To MarketPlace </h1>
+            <h1>Welcome To MarketPlace </h1>
 
 
 <div class="gallery">
 
 <a target="_blank" href="img_5terre.jpg">
-  <img src={ require('../assets/tmsq.jpg')} alt="Cinque Terre" width="600" height="400"/>
+
+  <img src={ require('../assets/2k19.jpeg')} alt="Cinque Terre" width="50" height="50"/>
+  
 </a>
 
-<div class="desc">Add a description of the image here</div>
+<div class="desc"> NBA 2K19 </div>
+<button id="0" onClick={this.handleCartClick}> Add to Cart </button>
 
 </div>
 
 <div class="gallery">
 <a target="_blank" href="img_forest.jpg">
-  <img src="img_forest.jpg" alt="Forest" width="600" height="400"/>
+  <img src={ require('../assets/StateOfDecay.jpeg')} alt="Forest" width="60" height="40"/>
 </a>
-<div class="desc">Add a description of the image here</div>
+<div class="desc"> State Of Decay </div>
 </div>
 
 <div class="gallery">
 <a target="_blank" href="img_lights.jpg">
-  <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400"/>
+  <img src={ require('../assets/spiderMan.jpeg')} alt="Northern Lights" width="50" height="40"/>
 </a>
-<div class="desc">Add a description of the image here</div>
+<div class="desc">Spider Man</div>
 </div>
 
 <div class="gallery">
 <a target="_blank" href="img_mountains.jpg">
-  <img src="img_mountains.jpg" alt="Mountains" width="600" height="400"/>
+  <img src={require('../assets/Ghost.jpeg')} alt="Mountains" width="60" height="40"/>
 </a>
 
-<div class="desc">Add a description of the image here</div>
+<div class="desc"> GHOST </div>
+
+<div class="gallery">
+<a target="_blank" href="img_forest.jpg">
+  <img src={ require('../assets/fallOut4.jpeg')} alt="Forest" width="60" height="40"/>
+</a>
+<div class="desc"> State Of Decay </div>
+</div>
 </div>
 
       </>    
