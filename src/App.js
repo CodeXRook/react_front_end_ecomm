@@ -16,7 +16,8 @@ import ShopProfile from './components/shopprofile';
 import ListOrders from './components/listorders';
 import Checkout from './components/checkout';
 import ViewProduct from './components/viewproduct';
-import  CreateProduct from './components/createproduct';
+import CreateProduct from './components/createproduct';
+import MarketPlace from '/'
 
 // ---- CONTEXTS
 import AuthContext from './contexts/auth';
@@ -52,6 +53,7 @@ class App extends Component {
                     <div className='container mt-5'>
                         <Switch>
                             <Route path='/' exact component ={ Home } />
+                            <Route path ='/marketplace' exact component ={MarketPlace}/>
                             <Route path='/signup' exact component ={ Signup } />
                             <Route path='/login' exact component= { Login } />
                             <Route path ='/logout' exact component={ Logout } />
