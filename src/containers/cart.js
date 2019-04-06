@@ -10,7 +10,11 @@ class Cart extends React.Component {
         }
     }
 //NEED TO CHECK DATAF FROM APP
-    componentDidMount
+    componentDidMount(){
+        const products = localStorage.getItem('cart');
+        this.setState({ products:products });
+    }
+    
     render(){
         return(
             <h1> You Cart Is Empty </h1>

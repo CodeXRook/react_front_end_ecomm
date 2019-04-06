@@ -5,14 +5,24 @@ class MarketPlace extends React.Component{
         super (props);
 
         this.state ={
-            input:''
+            input:'',
+
+            products: [{
+                id: 2,
+                name:'',
+                shop_id: 1,
+                price: 100,
+                description: 'jeans'
+                
+            }]
         }
     }
 
     render(){
         return (
-            
+
             <h1> Welcome To MarketPlace</h1>
+            
         );
     }
 }
