@@ -11,7 +11,7 @@ import Signup from './containers/signup';
 import Login from './containers/login';
 import Logout from './containers/logout';
 import Error404 from './components/error404';
-import Cart from './components/cart';
+import Cart from './containers/cart';
 import ShopProfile from './components/shopprofile';
 import ListOrders from './components/listorders';
 import Checkout from './components/checkout';
@@ -30,13 +30,18 @@ class App extends Component {
 
     
     componentDidMount() {
+        //LOCAL STORAGE
+        const cart = localStorage.getItem( 'cart');
+        this.setState({cart:JSON.parse(cart)});
+
         this.unsubscribe = firebase.auth().onAuthStateChanged((user) => {
             if (user) {
-                this.setState({ user });
+                this.setState({ user, cart:JSON.parse(cart)});
             }
              else {
                 this.setState({ user: null })
             }
+            
         })
     }
 
