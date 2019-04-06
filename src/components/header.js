@@ -31,7 +31,6 @@ export default (props) => {
       <Link className="nav-link" to="/logout">Logout</Link>
     </li>
 
-    <span> <input placeholder= "search">search</input></span>
     </>
 
 

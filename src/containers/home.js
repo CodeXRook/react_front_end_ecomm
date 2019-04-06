@@ -15,7 +15,7 @@ export default class Home extends React.Component {
             <div className="overlay">
 
               <div onClick className="">
-              <Link className="text" to='/home'>Enter JamPack</Link>
+              <Link className="text" to='/marketplace'>Enter JamPack</Link>
                </div>
             </div>
             </div>

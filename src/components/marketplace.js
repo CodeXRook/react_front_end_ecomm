@@ -3,14 +3,16 @@ import React from 'react';
 class MarketPlace extends React.Component{
     constructor(props){
         super (props);
-            input:''
-        this.state ={
 
+        this.state ={
+            input:''
         }
     }
+
     render(){
         return (
-            <h>MarketPlace</h>
+            <h1> Welcome To MarketPlace</h1>
         );
     }
 }
+export default MarketPlace;
