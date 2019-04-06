@@ -8,6 +8,10 @@
     width: 100%;
     height: auto;
   }
+
+  .backgroung{
+    filter: alpha(30);
+  }
   
   .overlay {
     position: absolute;
@@ -20,17 +24,19 @@
     opacity: 0;
     transition: .5s ease;
     background-color: black;
-
+    
   }
   
   .container:hover .overlay {
     opacity: 1;
   }
+
   a:hover{
-    text-decoration: none;
+    text-decoration: none; 
   }
+
+
   .text {
-    
     color: red;
     font-size: 70px;
     position: absolute;

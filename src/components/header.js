@@ -5,16 +5,17 @@ import AuthContext from '../contexts/auth';
 
 export default (props) => {
   const loggedOut = 
-
+  
   <div class="pos-f-t">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
       <h5> <Link className="nav-link" to="/">JamPack </Link> </h5>
-
+      
       <span> <Link className="nav-link" to="/signup">Sign Up</Link> 
 
       <Link className="nav-link" to="/login">Log In</Link>
       <Link className="nav-link" to="/logout">Logout</Link>
+     🛒 
       </span>
     </div>
  </div>

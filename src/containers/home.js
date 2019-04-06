@@ -14,7 +14,7 @@ export default class Home extends React.Component {
             <img src={ require('../assets/tmsq.jpg')} className="img-fluid" alt="Responsive image" />
             <div className="overlay">
 
-              <div onClick className="">
+              <div onClick className="backgroung">
               <Link className="text" to='/marketplace'>Enter JamPack</Link>
                </div>
             </div>
