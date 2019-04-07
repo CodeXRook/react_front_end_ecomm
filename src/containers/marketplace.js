@@ -80,6 +80,7 @@ class MarketPlace extends React.Component {
       <p>FLASH SALES</p>
 
 <div className="Sliders">
+<img className="mySlides" src={require('../assets/beachgear.jpeg')} />
   <img className="mySlides" src={require('../assets/techproducts.jpeg')} />
   <img className="mySlides"  src={require('../assets/Homeappliances.jpeg')} />
   <img className="mySlides"  src={require('../assets/mensbanner.jpg')}width="500" height="300" />
