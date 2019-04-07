@@ -74,6 +74,7 @@ class MarketPlace extends React.Component {
             <div className="desc"> State Of Decay </div>
         </div>
         </div>
+        
       <section>
 
       <p>FLASH SALES</p>
