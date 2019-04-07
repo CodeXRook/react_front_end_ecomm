@@ -31,9 +31,9 @@ handleCartClick = (e) => {
     render(){
         return (
 <>
-            <h1>Welcome To MarketPlace </h1>
+            <h1> Welcome To MarketPlace </h1>
 
-<di> 
+<div>
   <p> Game Marketplace </p>
 <div class="gallery">
 
@@ -75,8 +75,10 @@ handleCartClick = (e) => {
 </a>
 <div className="desc"> State Of Decay </div>
 </div>
+</div>
 
 
+<div>
 <p> Best Sellers </p>
 <div class="gallery">
 
@@ -102,26 +104,28 @@ handleCartClick = (e) => {
 
 <div className="gallery">
 <a target="_blank" href="img_lights.jpg">
-  <img src={ require('../assets/spiderMan.jpeg')} alt="Northern Lights" width="50" height="40"/>
+  <img src={ require('../assets/nike.jpeg')} alt="Northern Lights" width="50" height="40"/>
 </a>
-<div className="desc">Spider Man</div>
+<div className="desc">Nike Vapormax</div>
 </div>
 
 <div class="gallery">
 <a target="_blank" href="img_mountains.jpg">
-  <img src={require('../assets/Ghost.jpeg')} alt="Mountains" width="60" height="40"/>
+  <img src={require('../assets/alexa.jpg')} alt="Mountains" width="60" height="40"/>
 </a>
-<div className="desc"> GHOST </div>
+<div className="desc"> Hi Alexa </div>
+
+
+
 </div>
 
 <div className="gallery">
 <a target="_blank" href="img_forest.jpg">
-  <img src={ require('../assets/fallOut4.jpeg')} alt="Forest" width="60" height="40"/>
+  <img src={ require('../assets/SummerTent.jpg')} alt="Forest" width="80" height="50"/>
 </a>
-<div className="desc"> State Of Decay </div>
+<div className="desc"> Shop Tents </div>
 </div>
-</di>
-
+</div>
 
 
       </>    
