@@ -82,6 +82,7 @@ class MarketPlace extends React.Component {
 <div className="w3-content">
   <img className="mySlides" src={require('../assets/techproducts.jpeg')} />
   <img className="mySlides"  src={require('../assets/Homeappliances.jpeg')} />
+  <img className="mySlides"  src={require('../assets/mensbanner.jpg')}width="500" height="300" />
   <img className="mySlides" src={require('../assets/shopwoman.jpg')} width="500" height="300"/>
   </div>
       </section>
