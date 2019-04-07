@@ -74,15 +74,15 @@ class MarketPlace extends React.Component {
             <div className="desc"> State Of Decay </div>
         </div>
         </div>
-        
+
       <section>
 
       <p>FLASH SALES</p>
 
 <div className="w3-content">
-  <img className="mySlides" src="img_nature_wide.jpg" />
-  <img className="mySlides" src="img_snow_wide.jpg" />
-  <img className="mySlides" src={require('../assets/fallOut4.jpeg')} />
+  <img className="mySlides" src={require('../assets/techproducts.jpeg')} />
+  <img className="mySlides"  src={require('../assets/Homeappliances.jpeg')} />
+  <img className="mySlides" src={require('../assets/shopwoman.jpg')} width="500" height="300"/>
   </div>
       </section>
 
