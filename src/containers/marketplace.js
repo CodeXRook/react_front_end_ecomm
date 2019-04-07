@@ -79,14 +79,31 @@ class MarketPlace extends React.Component {
 
       <p>FLASH SALES</p>
 
-<div className="w3-content">
+<div className="Sliders">
   <img className="mySlides" src={require('../assets/techproducts.jpeg')} />
   <img className="mySlides"  src={require('../assets/Homeappliances.jpeg')} />
   <img className="mySlides"  src={require('../assets/mensbanner.jpg')}width="500" height="300" />
   <img className="mySlides" src={require('../assets/shopwoman.jpg')} width="500" height="300"/>
-  </div>
-      </section>
 
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity" src={require('../assets/techproducts.jpeg')}
+      width="100" onclick="currentDiv(1)"/>
+    </div>
+  
+  <div class="w3-col s4">
+      <img class="demo w3-opacity" src={require('../assets/Homeappliances.jpeg')}
+      width="100"  onclick="currentDiv(2)"/>
+    </div>
+
+    <div class="w3-col s4">
+      <img class="demo w3-opacity" src={require('../assets/Homeappliances.jpeg')}
+      width="100" onclick="currentDiv(3)"/>
+    </div>
+  </div>
+  </div>
+
+  </section>
 
           <div>
             <p> Best Sellers </p>
