@@ -75,7 +75,7 @@ class MarketPlace extends React.Component {
         </div>
         </div>
 
-      <section>
+     
 
       <p>FLASH SALES</p>
 
@@ -85,7 +85,9 @@ class MarketPlace extends React.Component {
   <img className="mySlides"  src={require('../assets/Homeappliances.jpeg')} />
   <img className="mySlides"  src={require('../assets/mensbanner.jpg')}width="500" height="300" />
   <img className="mySlides" src={require('../assets/shopwoman.jpg')} width="500" height="300"/>
-
+  </div>
+  
+{/* 
   <div class="w3-row-padding w3-section">
     <div class="w3-col s4">
       <img class="demo w3-opacity" src={require('../assets/techproducts.jpeg')}
@@ -104,10 +106,11 @@ class MarketPlace extends React.Component {
   </div>
   </div>
 
-  </section>
+  </section> */}
 
           <div>
-            <p> Best Sellers </p>
+
+            <h1> Best Sellers </h1>
             <div className="gallery">
 
               <a target="_blank" href="img_5terre.jpg">
