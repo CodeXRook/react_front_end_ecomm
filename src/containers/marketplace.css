@@ -10,7 +10,7 @@ div.gallery {
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 5px solid black;
   }
   
   div.gallery img {

@@ -8,8 +8,9 @@ class ShopProfile extends React.Component {
                 
           this.state = {
                 shops: [{
-                shop_name: 'Game Boss',
-                games:[{
+                shop_name: 'Game Boss', 
+
+                games: [{
                 title:'spiderman',
                 release_date:2018,
                 console:'PS4'
@@ -19,6 +20,15 @@ class ShopProfile extends React.Component {
               {}]
         
         }
+    }
+
+    render(){
+        return(
+
+            <>
+            <h1></h1>
+            </>
+        );
     }
 
 }

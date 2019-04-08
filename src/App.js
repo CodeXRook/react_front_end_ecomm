@@ -54,7 +54,8 @@ class App extends Component {
         return (
             <HashRouter>
                 <AuthContext.Provider value ={this.state.user}>
-                    <Route path='/' component={ Header }/>
+                    <Route path='/*' component={ Header }/>
+                    {/* <Route path='/login' exact component= { Login } /> */}
                     <div className='container mt-5'>
                         <Switch>
                             <Route path='/' exact component ={ Home } />

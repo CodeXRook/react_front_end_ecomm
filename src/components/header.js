@@ -9,6 +9,9 @@ export default (props) => {
   <div class="pos-f-t">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-light p-4">
+
+
+    
       <h5> <Link className="nav-link" to="/">JamPack </Link> </h5>
       
       <span> <Link className="nav-link" to="/signup">Sign Up</Link> 
@@ -28,7 +31,7 @@ export default (props) => {
   </nav> 
 </div>
       
-  const loggedIn = <><li className="nav-item">
+  const loggedIn = <> <li className="nav-item">
   
       <Link className="nav-link" to="/logout">Logout</Link>
     </li>
