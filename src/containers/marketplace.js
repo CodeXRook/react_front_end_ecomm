@@ -40,7 +40,6 @@ class MarketPlace extends React.Component {
             <a target="_blank" href="img_5terre.jpg">
 
               <img src={require('../assets/2k19.jpeg')} alt="Cinque Terre" width="50" height="50" />
-
             </a>
             <div className="desc"> NBA 2K19 </div>
 
@@ -76,9 +75,8 @@ class MarketPlace extends React.Component {
         </div>
 
      
-
-      <p>FLASH SALES</p>
-
+<div>
+ <p>FLASH SALES</p>
 <div className="Sliders">
 <img className="mySlides" src={require('../assets/beachgear.jpeg')} />
   <img className="mySlides" src={require('../assets/techproducts.jpeg')} />
@@ -86,8 +84,9 @@ class MarketPlace extends React.Component {
   <img className="mySlides"  src={require('../assets/mensbanner.jpg')}width="500" height="300" />
   <img className="mySlides" src={require('../assets/shopwoman.jpg')} width="500" height="300"/>
   </div>
+  </div>
   
-{/* 
+ 
   <div class="w3-row-padding w3-section">
     <div class="w3-col s4">
       <img class="demo w3-opacity" src={require('../assets/techproducts.jpeg')}
@@ -104,9 +103,8 @@ class MarketPlace extends React.Component {
       width="100" onclick="currentDiv(3)"/>
     </div>
   </div>
-  </div>
+  
 
-  </section> */}
 
           <div>
 
